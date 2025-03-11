@@ -151,6 +151,24 @@ ul li:hover {
     box-shadow: 0 4px 15px rgba(255, 204, 0, 0.5);
 }
 
+#contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre cada item */
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre ícone e texto */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+
 footer {
     background: #1e1e1e;
     padding: 20px;
@@ -158,6 +176,7 @@ footer {
     margin-top: 50px;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
 }
+
 
 /* Responsividade */
 @media (max-width: 768px) {
