@@ -151,6 +151,39 @@ ul li:hover {
     box-shadow: 0 4px 15px rgba(255, 204, 0, 0.5);
 }
 
+#projetos {
+    background: #1e1e1e;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1100px;
+    overflow-x: auto; /* Garante rolagem horizontal se necessário */
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os cards quebrem para a próxima linha */
+    gap: 20px;
+    padding-bottom: 10px; /* Espaço para não cortar sombras/efeitos */
+}
+
+.projeto-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.3);
+    min-width: 300px; /* Largura mínima para cada card */
+    max-height: fit-content;
+    flex-shrink: 0; /* Evita que os cards encolham */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 204, 0, 0.5);
+}
+
+
 #contato {
     display: flex;
     flex-direction: column;
