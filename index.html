@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Rodrigo Motti</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -40,27 +40,49 @@
     </section>
     <section id="projetos">
         <h2>Projetos</h2>
-        
         <div class="projetos-container">
             <div class="projeto-item">
-                <h3><strong>Gerador de Tickets</strong></h3>
-                <a href="https://ticket-generator-plum.vercel.app/" target="_blank" class="projeto-link">
-                    <img src="assets/img/ticket-generator.png" alt="Gerador de Tickets" class="projeto-imagem">
-                </a>
+                <div class="projeto-card">
+                    <div class="card-front">
+                        <h3><strong>Gerador de Tickets</strong></h3>
+                        <img src="assets/img/ticket-generator.png" alt="Gerador de Tickets" class="projeto-imagem">
+                    </div>
+                    <div class="card-back">
+                        <h3>Gerador de Tickets</h3>
+                        <p>Um sistema completo para geração de tickets com validação de dados e exportação em PDF.</p>
+                        <a href="https://ticket-generator-plum.vercel.app/" target="_blank" class="projeto-link">Visitar Projeto</a>
+                    </div>
+                </div>
             </div>
             
             <div class="projeto-item">
-                <h3><strong>Calculadora de Idade</strong></h3>
-                <a href="https://age-calculator-green-xi.vercel.app/" target="_blank" class="projeto-link">
-                    <img src="assets/img/age-calculator.png" alt="Calculadora de Idade" class="projeto-imagem">
-                </a>
+                <div class="projeto-card">
+                    <div class="card-front">
+                        <h3><strong>Calculadora de Idade</strong></h3>
+                        <img src="assets/img/age-calculator.png" alt="Calculadora de Idade" class="projeto-imagem">
+                    </div>
+                    <div class="card-back">
+                        <h3>Calculadora de Idade</h3>
+                        <p>Calculadora precisa que determina sua idade em anos, meses e dias com base na data de nascimento.</p>
+                        <a href="https://age-calculator-green-xi.vercel.app/" target="_blank" class="projeto-link">Visitar Projeto</a>
+                    </div>
+                </div>
             </div>
-            
             <div class="projeto-item">
-                <h3><strong>Portal de Notícias</strong></h3>
-                <a href="https://omni-news.vercel.app/" target="_blank" class="projeto-link">
-                    <img src="assets/img/omni-news.png" alt="Portal de Notícias" class="projeto-imagem">
-                </a>
+                <div class="projeto-card">
+                    <div class="card-front">
+                        <h3><strong>Portal de Notícias</strong></h3>
+                        <div class="image-container inactive">
+                            <img src="assets/img/omni-news.png" alt="Portal de Notícias" class="projeto-imagem">
+                            
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Portal de Notícias</h3>
+                        <p>Plataforma de notícias responsiva com categorias, busca e layout moderno. (Em desenvolvimento)</p>
+                        <a href="https://omni-news.vercel.app/" target="_blank" class="projeto-link inactive-link">Visitar Projeto</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -149,4 +171,5 @@
         <p>&copy; 2025 Rodrigo Motti - Todos os direitos reservados.</p>
     </footer>
 </body>
+<script src="main.js"></script>
 </html>
