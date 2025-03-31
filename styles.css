@@ -388,3 +388,104 @@ footer {
         max-width: 100%;
     }
 }
+
+
+/* Landscape para dispositivos móveis */
+@media (max-width: 768px) and (orientation: landscape) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .sobre-container {
+        gap: 20px;
+    }
+
+    .sobre-imagem img {
+        max-width: 150px;
+    }
+
+    .projetos-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 15px;
+    }
+
+    .projeto-item {
+        min-width: 250px;
+        height: 280px;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .projeto-imagem {
+        height: 160px;
+    }
+
+    /* Ajustes para seções de conteúdo */
+    section {
+        padding: 30px 15px;
+    }
+
+    ul li, .experiencia-item {
+        padding: 15px;
+        margin: 10px 0;
+    }
+}
+
+/* Ajustes para tablets em landscape */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .projetos-container {
+        gap: 15px;
+    }
+
+    .projeto-item {
+        max-width: 280px;
+        height: 320px;
+    }
+
+    .projeto-imagem {
+        height: 180px;
+    }
+}
+
+/* Ajustes gerais para telas menores em landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .sobre-container {
+        gap: 15px;
+    }
+
+    .sobre-imagem img {
+        max-width: 120px;
+    }
+
+    .projeto-item {
+        height: 250px;
+    }
+
+    .projeto-imagem {
+        height: 140px;
+    }
+}
